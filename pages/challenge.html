@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOTE - Challenge</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/challenge.css" />
+    <link rel="stylesheet" href="../css/modalVictory.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <img class="hamburger-menu" src="../img/home-bar.svg" alt="" />
+      </div>
+      <div id="user-card">
+        <div id="user-data">
+          <span class="user-name">Isaac Leonel</span>
+          <span class="user-email">5º Ano primeiro</span>
+          <div id="exp-bar">
+            <span class="gotten"></span>
+            <span class="gotten"></span>
+            <span class="gotten"></span>
+            <span class="gotten"></span>
+            <span class="gotten"></span>
+            <span class="gotten"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="user-avatar">
+          <img src="../img/charAluno.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <div id="content">
+      <div class="challenge-info">
+        <h2>Trilha do 4ª ano primário - Produção de texto</h2>
+        <h4>Nível Fácil</h4>
+      </div>
+      <div class="box challenge-description">
+        <h3>Desafio</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+          provident, molestiae commodi nobis blanditiis, neque nam quo eum
+          quaerat, delectus tempore nostrum at aliquam beatae! Facere
+          consequuntur explicabo veniam suscipit fugiat provident vel non minus.
+          Rem modi harum in molestias aspernatur libero veniam molestiae. Alias
+          sed dolorem pariatur fugit minus!
+        </p>
+      </div>
+      <div class="box">
+        <h3>Solução</h3>
+        <div class="options">
+          <span class="button-option"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+          >
+          <span class="button-option">Eget massa vitae, enim aliquet. </span>
+          <span class="button-option"
+            >Ultricies volutpat egestas egestas feugiat integer aliquet neque
+            condimentum arcu.</span
+          >
+          <span class="button-option"
+            >Risus in pretium mattis condimentum nisl, vitae felis</span
+          >
+        </div>
+      </div>
+      <div class="box">
+        <h3>Opções</h3>
+        <div class="options">
+          <a onclick="abrir()" href="#modal">
+          <button class="button-option" type="button">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </button></a>
+          <a onclick="abrir()" href="#modal"><button class="button-option" type="button">
+            Ultricies volutpat egestas egestas feugiat integer aliquet neque
+            condimentum arcu.
+          </button></a>
+          <a onclick="abrir()" href="#modal"> <button class="button-option" type="button">
+            Scelerisque et ante magnis nulla felis nam.
+          </button></a>
+          <a onclick="abrir()" href="#modal"> <button class="button-option" type="button">
+            Eget massa vitae, enim aliquet.
+          </button></a>
+          <a onclick="abrir()" href="#modal"> <button class="button-option" type="button">
+            In euismod facilisis quisque gravida sed massa, vitae
+          </button></a>
+          <a onclick="abrir()" href="#modal"> <button class="button-option" type="button">
+            Risus in pretium mattis condimentum nisl, vitae felis
+          </button></a>
+        </div>
+      </div>
+    </div>
+
+    
+
+      <!-- footer -->
+    <div class="footer">
+      <button class="button-home" type="button">
+        <a href="../pages/dashboard.html"><img src="../img/home Icon.png" alt="Home" /></a>
+      </button>
+      <a href="../pages/challengeFailed.html"><button class="button-send" type="button">Enviar</button></a>
+
+
+      <!-- MODAL -->
+      <div id= "modal" class="modal">
+        <div class="modal-container">
+            <div class="profile-about">
+              <div class="titleModal">
+                <h1>PARABÉNS</h1>
+              </div>
+              <div class="containerVictory">
+                <div class="modalStars">
+                   <img src="../img/stars.svg" alt="" srcset="">
+                </div>
+                <div class="modalChar">
+                  <img src="../img/charFeliz.png" alt="" srcset="">
+                </div>
+                <div id="exp-bar">
+                  <span class="gotten"></span>
+                  <span class="gotten"></span>
+                  <span class="gotten"></span>
+                  <span class="gotten"></span>
+                  <span class="gotten"></span>
+                  <span class="gotten"></span>
+                  <span class="gotten"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                </div>
+                <p>+45 XP</p>
+                
+                <div>
+                  <h2>ITENS CONQUISTADOS</h2>
+                  <ul class="containerItens">
+                    <li class="itemCard"> 
+                      <img src="../img/espada.png">
+                      <p>Espada <br>de Bhaskara</p>
+                    </li>
+                    <li class="itemCard"> 
+                      <img src="../img/espada.png">
+                      <p>Espada <br>de Bhaskara</p>
+                    </li>
+                    <li class="itemCard"> 
+                      <img src="../img/espada.png">
+                      <p>Espada <br>de Bhaskara</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="dashboard.html" class="buttomVic"><button>CONTINUE</button></a>
+              <a href="dashboard.html" class="backtomenu">VOLTAR AO MENU</a>
+            
+            </div>
+        </div>
+
+        <div>
+            <a onclick="fechar()" class="fechar" href=""><img src="../img/Buttom Close.png" alt=""></a>
+        </div>
+    </div>
+
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

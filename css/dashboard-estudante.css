@@ -1,0 +1,461 @@
+.painel {
+    background-color: #2CB67D;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.charPerson img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 10px;
+}
+
+.buttonsRight {
+    margin-top: 100px;
+}
+
+.buttomR img {
+    max-width: 70px;
+    margin-top: 10px;
+    max-height: 70px;
+}
+
+
+.buttomR img:hover{
+    max-width: 80px;
+    margin-top: 10px;
+    max-height: 80px;
+    transition: 0.5s;
+}
+
+.buttomE img {
+    visibility: hidden;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+/* Mini Perfil */
+.miniPerfil {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 110px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.nomePerfil {
+    font-size: 1rem;
+}
+
+.nomePerfil span {
+    font-size: 0.8rem;
+    list-style: circle;
+}
+
+.xp-bar {
+    background-color: #fff;
+    width: 90%;
+    height: 10px;
+    border-radius: 10px;
+
+}
+
+.porcetagem {
+    border-radius: 10px;
+    background: #2CB67D;
+    height: 10px;
+    width: 98%;
+}
+
+.buttom-editarP button {
+    padding-inline: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+    border-radius: 20px;
+    background-color: #7F5AF0;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Carousel */
+.visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 130px;
+}
+
+.card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 400px;
+    --carousel-min-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+}
+
+@media screen and (max-width: 640px) {
+    .card-carousel {
+        margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+}
+
+.card-carousel.smooth-return {
+    transition: all .2s ease;
+}
+
+.card-carousel .card {
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 300px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, .5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.highlight {
+    filter: brightness(1)
+}
+
+.green {
+    background-color: #2CB67D;
+}
+
+.violet {
+    background-color: #7F5AF0;
+}
+
+
+.card-buttom-violetB button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #7F5AF0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.card-buttom-greenB button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2CB67D;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-carousel .card h1 {
+    font-weight: lighter;
+    border-bottom: 1px solid #fff;
+}
+
+/* ATIVIDADES */
+
+.tasks {
+    margin-right: 50px;
+    margin-top: 20px;
+    border: 1px solid #2CB67D;
+    padding: 20px;
+    border-radius: 20px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+#task {
+    margin-top: 30px;
+    color: #fff;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#task li {
+    list-style: disc;
+    padding-left: 10px;
+    padding: 0;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #2CB67D;
+}
+
+
+
+/* Responsividade */
+
+/* Desktops pequenos */
+@media (max-width: 1024px) {}
+
+/* Tablet */
+@media (max-width: 767px) {}
+
+/* Celular */
+@media (max-width: 480px) {
+    .painel {
+        background-color: #16161a;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .charPerson img {
+        max-width: 70px;
+        max-height: 70px;
+        position: absolute;
+        top: 0;
+        margin-top: -590px;
+        margin-left: 10px;  
+    }
+
+    .buttonsRight {
+        margin-top: 0px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .buttomR img {
+        max-width: 70px;
+        margin-top: 0px;
+        max-height: 70px;
+        margin-left: 20px;
+    }
+
+
+    .buttomE img {
+        visibility: visible;
+        max-width: 70px;
+        margin-top: 0px;
+        max-height: 70px;
+        margin-left: 20px;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: column-reverse;
+    }
+
+    /* Mini Perfil */
+    .miniPerfil {
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 100px;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .miniPerfil p {
+        font-size: 0.9rem;
+        padding: 1.2px;
+    }
+
+    .nomePerfil {
+        font-size: 1.2rem;
+    }
+
+    .nomePerfil span {
+        font-size: 0.5rem;
+        list-style: circle;
+    }
+
+    .xp-bar {
+        background-color: #fff;
+        width: 90%;
+        height: 10px;
+        border-radius: 10px;
+
+    }
+
+    .porcetagem {
+        border-radius: 10px;
+        background: #2CB67D;
+        height: 10px;
+        width: 98%;
+    }
+
+    .buttom-editarP button {
+        padding-inline: 20px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: none;
+        border-radius: 20px;
+        background-color: #7F5AF0;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /* Carousel */
+
+    .container {
+        margin-top: -230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+    }
+
+    .card-carousel {
+        --card-width: 100%;
+        --card-max-width: 280px;
+        --card-height: 400px;
+        --carousel-min-width: 100vw;
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        height: var(--card-height);
+        min-width: var(--carousel-min-width);
+        transition: filter .3s ease;
+    }
+
+
+    .card-carousel.smooth-return {
+        transition: all .2s ease;
+    }
+
+    .card-carousel .card {
+        width: var(--card-width);
+        max-width: var(--card-max-width);
+        text-align: center;
+        padding: 0px;
+        min-width: 100px;
+        height: var(--card-height);
+        position: absolute;
+        margin: 0 auto;
+        color: rgba(0, 0, 0, .5);
+        transition: inherit;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 1em;
+        filter: brightness(.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .green {
+        background-color: #2CB67D;
+    }
+
+    .violet {
+        background-color: #7F5AF0;
+    }
+
+
+    .card-buttom-violetB button {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: #7F5AF0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+
+    .card-buttom-greenB button {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: #2CB67D;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .card-carousel .card h1 {
+        font-weight: lighter;
+        border-bottom: 1px solid #fff;
+    }
+
+    /* ATIVIDADES */
+
+    .tasks {
+        margin-right: 50px;
+        margin-top: 20px;
+        border: 1px solid #2CB67D;
+        padding: 20px;
+        border-radius: 20px;
+        width: 350px;
+        margin-bottom: 10px;
+        visibility: hidden;
+    }
+
+    #task {
+        margin-top: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    #task li {
+        list-style: disc;
+        padding-left: 10px;
+        padding: 0;
+        font-size: 15px;
+        margin-top: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #2CB67D;
+    }
+}

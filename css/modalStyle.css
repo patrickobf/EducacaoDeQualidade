@@ -1,0 +1,273 @@
+
+.modal{
+    width: 900px;
+    height: 600px;
+    background: #2CB67D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
+
+.fechar img {
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.fechar img:hover {
+    width: 35px;
+    height: 35px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.modal-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.profile-about {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.avatar{
+    width: 300px;
+    height: 300px;
+    background: #16161A;
+    border:solid 4px #7F5AF0;
+    border-radius: 20px;
+}
+
+.about{
+    width: 500px;
+    height: 300px;
+    background: #16161A;
+    border:solid 4px #7F5AF0;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    font-size: 1.3rem;
+}
+
+.medals{
+    width: 100%;
+    height: 200px;
+    background: #16161A;
+    margin-top: 60px;
+    border:solid 4px #7F5AF0;
+    border-radius: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-medals{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.container-medals h3 {
+    margin: 0 auto;
+}
+
+.medalhas{
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.medalhas li{
+    list-style: none;
+}
+
+.medalhas img{
+    width: 80px;
+    height: 80px;
+}
+
+.medalhas img:hover{
+    width: 90px;
+    height: 90px;
+    transition: 0.3s;
+}
+
+
+.sobre , .perfil{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: stretch;
+    margin: 0 4px;   
+}
+
+.sobre p, .perfil li {
+    background-color: #7F5AF0;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 8px 0;
+    flex: 1;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.perfil p{
+    align-items: center;
+}
+
+.sobre h3 , .perfil h3 {
+    text-align: center;
+    margin: 8px 0;
+}
+
+hr {
+    width: 80%;
+}
+
+.avatar img {
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 120px;
+    padding-top: 10px;
+}
+
+.avatar img:hover{
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 130px;
+    padding-top: 10px;
+}
+
+.avatar h3 {
+    margin: 5px 10px;
+    color: aliceblue;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.avatar p {
+    margin: 0 0;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+#exp-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  #exp-bar span {
+    width: 14px;
+    height: 14px;
+    background: chartreuse;
+    border: 3px solid var(--background-dark);
+  }
+  
+  #exp-bar span.gotten {
+    background: chartreuse;
+  }
+  
+  #exp-bar span:first-of-type {
+    border-radius: 50% 0 0 50%;
+  }
+  
+  #exp-bar span:last-of-type {
+    border-radius: 0 50% 50% 0;
+  }
+
+  @media (max-width: 480px) {
+    .modal{
+        width: 100vw;
+        height: 100vh;
+        background: #2CB67D;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        animation: animate;
+        animation-duration: 800ms;
+        border-radius: 0px;
+        padding: 40px;
+    }
+    
+    .medals{
+        width: 100%;
+        height: 200px;
+        background: #16161A;
+        margin-top: 300px;
+        border:solid 4px #7F5AF0;
+        border-radius: 20px;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+    .avatar{
+        width: 500px;
+        height: 250px;
+        background: #16161A;
+        border:solid 4px #7F5AF0;
+        border-radius: 20px;
+    }
+    .charModal img{
+        width: 100px;
+        height: 150px;
+    }
+    .perfil li {
+        background-color: #7F5AF0;
+        border-radius: 10px;
+        padding: 8px;
+        margin: 2px 0;
+        flex: 1;
+        display: flex;
+        font-family: sans-serif;
+        font-size: 10   px;
+    }
+    .medalhas li{
+        list-style: none;   
+    }
+  }
+
+
+
+
